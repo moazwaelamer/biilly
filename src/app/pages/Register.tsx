@@ -46,7 +46,7 @@ export function Register() {
     try{
       setLoading(true)
 
-      const res = await fetch("http://localhost:5000/api/players/register", {
+      const res = await fetch("https://backbilly.vercel.app/api/players/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

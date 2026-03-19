@@ -22,7 +22,7 @@ export function Login() {
     try{
       setLoading(true)
 
-      const res = await fetch("http://localhost:5000/api/players/login", {
+      const res = await fetch("https://backbilly.vercel.app/api/players/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ phone: phone.trim(), password })

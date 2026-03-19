@@ -18,7 +18,7 @@ const loadEvents = async ()=>{
 
 try{
 
-const res = await fetch("http://localhost:5000/api/movies")
+const res = await fetch("https://backbilly.vercel.app/api/movies")
 const data = await res.json()
 
 setEvents(data)
@@ -129,7 +129,7 @@ ${soldOut ? "border-red-500/50 opacity-80" : "border-emerald-500/30 hover:border
 
 
 <img
-src={`http://localhost:5000${event.image_url}`}
+src={`https://backbilly.vercel.app${event.image_url}`}
 className="w-full h-40 object-cover rounded mb-4"
 />
 {/* SOLD OUT BADGE */}

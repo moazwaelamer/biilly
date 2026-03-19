@@ -25,7 +25,7 @@ export function Profile() {
 
   const loadProfile = async (playerId: number, token: string) => {
     try {
-      const res = await fetch(`http://localhost:5000/api/players/${playerId}`, {
+      const res = await fetch(`https://backbilly.vercel.app/api/players/${playerId}`, {
         headers: { "Authorization": `Bearer ${token}` }
       })
       if(!res.ok) throw new Error("Failed")
@@ -63,7 +63,7 @@ export function Profile() {
 
     try {
       setCancellingId(reservationId)
-      const res = await fetch(`http://localhost:5000/api/reservations/${reservationId}/cancel`, {
+      const res = await fetch(`https://backbilly.vercel.app/api/reservations/${reservationId}/cancel`, {
         method: "PATCH",
         headers: { "Authorization": `Bearer ${user?.token}` }
       })
@@ -144,7 +144,7 @@ export function Profile() {
             <div className="flex flex-col md:flex-row items-center gap-6">
               <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-primary bg-zinc-800 flex items-center justify-center">
                 {data?.avatar_url
-                  ? <img src={`http://localhost:5000${data.avatar_url}`} className="w-full h-full object-cover" />
+                  ? <img src={`https://backbilly.vercel.app${data.avatar_url}`} className="w-full h-full object-cover" />
                   : <span className="text-4xl font-bold text-primary">{data?.full_name?.[0]?.toUpperCase() || "?"}</span>
                 }
               </div>

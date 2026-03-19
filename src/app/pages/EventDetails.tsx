@@ -15,7 +15,7 @@ export function EventDetails() {
 
   useEffect(() => {
     // ✅ جيب البطولة مباشرة بالـ ID
-    fetch(`http://localhost:5000/api/tournaments`)
+    fetch(`https://backbilly.vercel.app/api/tournaments`)
       .then(r => r.json())
       .then(data => {
         const found = Array.isArray(data)
@@ -39,7 +39,7 @@ export function EventDetails() {
         return
       }
 
-      const res = await fetch(`http://localhost:5000/api/tournaments/${event.tournament_id}/join`, {
+      const res = await fetch(`https://backbilly.vercel.app/api/tournaments/${event.tournament_id}/join`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

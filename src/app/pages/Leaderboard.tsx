@@ -27,7 +27,7 @@ export function Leaderboard() {
   const currentUser = JSON.parse(localStorage.getItem("userProfile") || "{}")
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/players/leaderboard")
+    fetch("https://backbilly.vercel.app/api/players/leaderboard")
       .then(r => r.json())
       .then(data => {
         setPlayers(Array.isArray(data) ? data : [])
@@ -132,7 +132,7 @@ export function Leaderboard() {
                     position === 1 ? "border-yellow-400 bg-yellow-900/30" : "border-white/20 bg-white/5"
                   }`}>
                     {p.avatar_url
-                      ? <img src={`http://localhost:5000${p.avatar_url}`} className="w-full h-full rounded-full object-cover" />
+                      ? <img src={`https://backbilly.vercel.app${p.avatar_url}`} className="w-full h-full rounded-full object-cover" />
                       : p.full_name?.[0]?.toUpperCase()
                     }
                   </div>
@@ -199,7 +199,7 @@ export function Leaderboard() {
                   {/* Avatar */}
                   <div className="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-sm border border-white/10 bg-white/5 overflow-hidden">
                     {p.avatar_url
-                      ? <img src={`http://localhost:5000${p.avatar_url}`} className="w-full h-full object-cover" />
+                      ? <img src={`https://backbilly.vercel.app${p.avatar_url}`} className="w-full h-full object-cover" />
                       : p.full_name?.[0]?.toUpperCase()
                     }
                   </div>

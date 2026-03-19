@@ -18,7 +18,7 @@ export default function MovieBooking() {
 
   const loadSeats = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/api/movies/${movieId}/seats`)
+      const res = await fetch(`https://backbilly.vercel.app/api/movies/${movieId}/seats`)
       const data = await res.json()
       setSeats(data)
     } catch(err) {
@@ -56,7 +56,7 @@ export default function MovieBooking() {
     try {
       setBooking(true)
 
-      const res = await fetch("http://localhost:5000/api/movies/book-seats", {
+      const res = await fetch("https://backbilly.vercel.app/api/movies/book-seats", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

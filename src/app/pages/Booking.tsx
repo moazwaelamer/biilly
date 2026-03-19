@@ -105,7 +105,7 @@ endDate.setMinutes(endDate.getMinutes() + (duration % 1) * 60)
       let response
 
       if(bookingType === "movie") {
-        response = await fetch("http://localhost:5000/api/movies/book-seats", {
+        response = await fetch("https://backbilly.vercel.app/api/movies/book-seats", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
@@ -117,7 +117,7 @@ endDate.setMinutes(endDate.getMinutes() + (duration % 1) * 60)
           })
         })
       } else {
-       response = await fetch("http://localhost:5000/api/reservations", {
+       response = await fetch("https://backbilly.vercel.app/api/reservations", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify({
