@@ -1,0 +1,60 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* React Slick Carousel Styles */
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+/* AZTEAC CONTAINER */
+/* Container adjustments */
+.azteac-container {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px;
+    text-decoration: none;
+}
+
+.azteac-text {
+    font-size: 34px;
+    font-weight: 900;
+    letter-spacing: 12px; /* تقليل المسافة بسيط عشان التعبان يلحق يلف */
+    color: #ff3b3b;
+    z-index: 1;
+    position: relative;
+}
+
+.azteac-snake {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+}
+.snake-path {
+    fill: none;
+    stroke: #ff3b3b;
+    stroke-width: 5; /* تعبان أتخن شوية */
+    stroke-linecap: round; /* رأس وديل مدورين */
+    stroke-linejoin: round;
+    
+    /* طول التعبان 80 والمسافة الفاضية 400 عشان يختفي ويرجع يظهر */
+    stroke-dasharray: 80, 400; 
+    
+    /* الحركة بطيئة (6 ثواني) وانسيابية */
+    animation: snakeSlither 6s ease-in-out infinite;
+    
+    filter: drop-shadow(0 0 10px rgba(255, 59, 59, 0.9));
+}
+
+@keyframes snakeSlither {
+    0% {
+        stroke-dashoffset: 480; /* يبدأ من بره الكادر */
+    }
+    100% {
+        stroke-dashoffset: 0; /* ينتهي براحة */
+    }
+}
