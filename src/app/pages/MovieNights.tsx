@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 export function MovieNights() {
 
 const background =
-"https://images.unsplash.com/photo-1594909122845-11baa439b7bf?q=80&w=2000&auto=format&fit=crop";
+"https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1600";
 
 const [events,setEvents] = useState<any[]>([]);
 
@@ -18,7 +18,7 @@ const loadEvents = async ()=>{
 
 try{
 
-const res = await fetch("https://backbilly.vercel.app/api/movies")
+const res = await fetch("http://localhost:5000/api/movies")
 const data = await res.json()
 
 setEvents(data)
@@ -56,8 +56,8 @@ transition={{duration:0.8}}
 className="w-full h-full object-cover"
 />
 
-<div className="absolute inset-0 bg-black/70"/>
-<div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-black/20"/>
+<div className="absolute inset-0 bg-black/40"/>
+<div className="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent"/>
 
 </div>
 
@@ -129,7 +129,7 @@ ${soldOut ? "border-red-500/50 opacity-80" : "border-emerald-500/30 hover:border
 
 
 <img
-src={`https://backbilly.vercel.app${event.image_url}`}
+src={`http://localhost:5000${event.image_url}`}
 className="w-full h-40 object-cover rounded mb-4"
 />
 {/* SOLD OUT BADGE */}

@@ -23,8 +23,6 @@ createRoot(document.getElementById("root")!).render(
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     // التأكد أن المسار يبدأ بـ / ومعناه أنه سيبحث عنه في فولدر public
-    navigator.serviceWorker.register('/sw.js')
-      .then(reg => console.log('✅ Service Worker جاهز والشغل تمام!'))
-      .catch(err => console.error('❌ فيه مشكلة في الـ SW:', err));
+    navigator.serviceWorker.register('/sw.js');
   });
 }

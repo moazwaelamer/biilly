@@ -23,7 +23,7 @@ export function Events() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch("https://backbilly.vercel.app/api/tournaments")
+    fetch("http://localhost:5000/api/tournaments")
       .then(r => r.json())
       .then(data => setEvents(Array.isArray(data) ? data : []))
       .catch(console.error)

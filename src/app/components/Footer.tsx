@@ -18,18 +18,10 @@ export function Footer() {
               Premium PlayStation gaming experience with luxury amenities, exclusive game library, and unforgettable entertainment.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors">
+              <a href="https://www.instagram.com/billys.hub.eg?igsh=emFnYmtvOHRwZ2hx" className="text-gray-400 hover:text-primary transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors">
-                <Youtube className="w-5 h-5" />
-              </a>
+              
             </div>
           </div>
 
@@ -69,19 +61,10 @@ export function Footer() {
                   Food & Beverages
                 </Link>
               </li>
+    
               <li>
-                <a href="#" className="text-gray-400 hover:text-primary transition-colors text-sm">
-                  Private Events
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-primary transition-colors text-sm">
+                <a href="birthday" className="text-gray-400 hover:text-primary transition-colors text-sm">
                   Birthday Packages
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-primary transition-colors text-sm">
-                  Corporate Bookings
                 </a>
               </li>
             </ul>
@@ -94,17 +77,14 @@ export function Footer() {
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <span className="text-gray-400 text-sm">
-                  123 Gaming Street, Tech District, San Francisco, CA 94105
+                  Abou Hanifa Al Nomani, El Sheikh Zayed, Ismailia, Ismailia Governorate 41511
                 </span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                <span className="text-gray-400 text-sm">+1 (555) 123-4567</span>
+                <span className="text-gray-400 text-sm">+201552858668</span>
               </li>
-              <li className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-primary flex-shrink-0" />
-                <span className="text-gray-400 text-sm">info@pslounge.com</span>
-              </li>
+          
             </ul>
           </div>
         </div>
@@ -115,17 +95,7 @@ export function Footer() {
             <p className="text-gray-400 text-sm">
               © 2026 Billy's Hub. All rights reserved.
             </p>
-            <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors text-sm">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors text-sm">
-                Terms of Service
-              </a>
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors text-sm">
-                Cookie Policy
-              </a>
-            </div>
+          
           </div>
           <div className="mt-4 text-center">
           <p className="text-gray-400 text-sm flex items-center justify-center gap-3">

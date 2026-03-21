@@ -1,3 +1,9 @@
+import mini from '../asst/mini.jpeg';
+import st1 from '../asst/st1.jpeg';
+import st2 from '../asst/st2.jpeg';
+import st3 from '../asst/st3.jpeg';
+import view from '../asst/view.jpeg';
+import vip from '../asst/vip.jpeg';
 export const roomsData = [
 
 {
@@ -15,7 +21,7 @@ movie: 100,
 birthday: 100
 },
 image:
-"https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800&q=80",
+st2,
 rating: 4.8
 },
 
@@ -34,7 +40,7 @@ movie: 100,
 birthday: 100
 },
 image:
-"https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800&q=80",
+st1,
 rating: 4.7
 },
 
@@ -53,12 +59,12 @@ movie: 100,
 birthday: 100
 },
 image:
-"https://images.unsplash.com/photo-1691169467000-d1d929ec380d?w=800&q=80",
+st3,
 rating: 4.8
 },
 
 {
-id: 4,
+id: 5,
 roomNumber: "Mini Studio",
 category: "mini",
 name: "Mini Studio",
@@ -72,12 +78,12 @@ movie: 100,
 birthday: 100
 },
 image:
-"https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80",
+mini,
 rating: 4.9
 },
 
 {
-id: 5,
+id: 4,
 roomNumber: "VIP Room",
 category: "vip",
 name: "VIP Room",
@@ -91,7 +97,7 @@ movie: 120,
 birthday: 120
 },
 image:
-"https://images.unsplash.com/photo-1616445598565-5327a63e85d0?w=800&q=80",
+vip,
 rating: 5.0
 }
 

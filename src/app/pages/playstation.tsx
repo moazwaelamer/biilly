@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export function PlayStationService() {
 
   const background =
-    "https://images.unsplash.com/photo-1616440347437-b1c73416efc2?w=2000&q=80";
+    "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?q=80&w=1600";
 
   return (
 

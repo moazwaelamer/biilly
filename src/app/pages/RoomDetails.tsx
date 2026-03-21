@@ -49,7 +49,7 @@ export function RoomDetails() {
   useEffect(() => {
     if (!id) return
 
-    fetch(`https://backbilly.vercel.app/api/rooms`)
+    fetch(`http://localhost:5000/api/rooms`)
       .then(r => r.json())
       .then((rooms) => {
         const found = rooms.find((r: any) => r.room_id === Number(id))
@@ -68,7 +68,7 @@ export function RoomDetails() {
         setLoadingSlots(true)
 
         const res = await fetch(
-          `https://backbilly.vercel.app/api/reservations/availability?room_id=${room.room_id}&date=${selectedDate}`
+          `http://localhost:5000/api/reservations/availability?room_id=${room.room_id}&date=${selectedDate}`
         )
 
         const data = await res.json()

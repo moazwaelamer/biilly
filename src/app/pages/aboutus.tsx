@@ -23,10 +23,13 @@ About Us
 </h2>
 
 <p className="text-gray-300 text-lg mb-6">
-We provide the ultimate gaming experience with private PS5 rooms,
-4K screens, surround sound and a premium atmosphere for gamers.
-Whether you're here for tournaments, movie nights or birthdays —
-we make every moment unforgettable.
+At Billy’s Hub, we believe gaming should be simple, enjoyable, and consistently high quality.
+
+We’ve created a space where players can relax, connect, and enjoy their time without distractions. With modern PlayStation setups, a strong selection of games, and a comfortable environment, everything is designed to deliver a smooth and reliable experience every time you visit.
+
+Whether you’re coming in to unwind with friends or spend time improving your skills, Billy’s Hub offers the right balance between comfort, performance, and atmosphere.
+
+Our focus is straightforward: provide a place you can trust for a great gaming experience.
 </p>
 
 <p className="text-gray-400">

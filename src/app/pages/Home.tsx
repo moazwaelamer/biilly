@@ -29,22 +29,24 @@ import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 function FoodShowcase() {
   const [hoveredFood, setHoveredFood] = useState<string | null>(null);
 
-  const foodCategories = [
-    { 
-      id: "Snacks", 
-      name: "Crunchy Snacks", 
-      description: "Chips, Doritos & More", 
-      image: "https://images.unsplash.com/photo-1603052875302-d376b7c0638a?q=80&w=1080",
-      icon: <Flame className="text-orange-500 w-6 h-6" />
-    },
-    { 
-      id: "Drinks", 
-      name: "Cold & Hot Drinks", 
-      description: "Soda, Energy Drinks & Coffee", 
-      image: "https://images.unsplash.com/photo-1622484211148-715348e362aa?q=80&w=1080",
-      icon: <Zap className="text-blue-400 w-6 h-6" />
-    }
-  ];
+const foodCategories = [
+  { 
+    id: "Snacks", 
+    name: "Crunchy Snacks", 
+    description: "Chips, Doritos & More", 
+    // صورة سناكس أوضح
+    image: "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?q=80&w=1080",
+    icon: <Flame className="text-orange-500 w-6 h-6" />
+  },
+  { 
+    id: "Drinks", 
+    name: "Cold & Hot Drinks", 
+    description: "Soda, Energy Drinks & Coffee", 
+    // صورة مشروبات أوضح
+    image: "https://images.unsplash.com/photo-1544145945-f90425340c7e?q=80&w=1080",
+    icon: <Zap className="text-blue-400 w-6 h-6" />
+  }
+];
 
   return (
     <section className="w-full min-h-screen bg-black flex items-center py-20 overflow-hidden">
